@@ -1,0 +1,31 @@
+人脸注册请求：
+curl -i -k 'https://aip.baidubce.com/rest/2.0/faceverify/v1/faceset/user/add?access_token=24.a1ff1c9e242129e0e88e506dfc223454.2592000.1492586050.282335-9395294' --data '{"uid":"testuid", "images":"%2F9j%2F4AAQSkZJRgABAQAAAQABAAD%2F4QDKRXhpZgAATU0AK"}' -H 'Content-Type:application/x-www-form-urlencoded'
+
+人脸更新请求：
+curl -i -k 'https://aip.baidubce.com/rest/2.0/faceverify/v1/faceset/user/update?access_token=24.a1ff1c9e242129e0e88e506dfc223454.2592000.1492586050.282335-9395294' --data '{"uid":"testuid", "images":"%2F9j%2F4AAQSkZJRgABAQAAAQABAAD%2F4QDKRXhpZgAATU0AK"}' -H 'Content-Type:application/x-www-form-urlencoded'
+
+人脸删除请求：
+curl -i -k 'https://aip.baidubce.com/rest/2.0/faceverify/v1/faceset/user/delete?access_token=24.a1ff1c9e242129e0e88e506dfc223454.2592000.1492586050.282335-9395294' --data '{"uid":"testuid"}' -H 'Content-Type:application/x-www-form-urlencoded'
+
+人脸认证请求：
+curl -i -k 'https://aip.baidubce.com/rest/2.0/faceverify/v1/verify?access_token=24.a1ff1c9e242129e0e88e506dfc223454.2592000.1492586050.282335-9395294' --data '{"uid":"testuid", "images":"%2F9j%2F4AAQSkZJRgABAQAAAQABAAD%2F4QDKRXhpZgAATU0AK"}' -H 'Content-Type:application/x-www-form-urlencoded'
+
+人脸识别请求：
+curl -i -k 'https://aip.baidubce.com/rest/2.0/faceverify/v1/identify?access_token=24.a1ff1c9e242129e0e88e506dfc223454.2592000.1492586050.282335-9395294' --data '{"group_id":"testuid", "images":"%2F9j%2F4AAQSkZJRgABAQAAAQABAAD%2F4QDKRXhpZgAATU0AK"}' -H 'Content-Type:application/x-www-form-urlencoded'
+
+用户信息查询请求：
+curl -i -k 'https://aip.baidubce.com/rest/2.0/faceverify/v1/faceset/user/get?access_token=24.a1ff1c9e242129e0e88e506dfc223454.2592000.1492586050.282335-9395294' --data '{"group_id":"gid"}' -H 'Content-Type:application/x-www-form-urlencoded'
+
+组列表查询请求：
+curl -i -k 'https://aip.baidubce.com/rest/2.0/faceverify/v1/faceset/group/getlist?access_token=24. a1ff1c9e242129e0e88e506dfc223454.2592000.1492586050.282335-9395294' --data '{"start":"0","num":"100"}' -H 'Content-Type:application/x-www-form-urlencoded'
+
+
+组内用户列表查询请求：
+curl -i -k 'https://aip.baidubce.com/rest/2.0/faceverify/v1/faceset/group/getusers?access_token=24.a1ff1c9e242129e0e88e506dfc223454.2592000.1492586050.282335-9395294' --data '{"group_id":"gid","start":"0","num":"100"}' -H 'Content-Type:application/x-www-form-urlencoded'
+
+组内添加用户请求：
+curl -i -k 'https://aip.baidubce.com/rest/2.0/faceverify/v1/faceset/group/adduser?access_token=24.a1ff1c9e242129e0e88e506dfc223454.2592000.1492586050.282335-9395294' --data '{"group_id":"gid","uid":"test_uid"}' -H 'Content-Type:application/x-www-form-urlencoded'
+
+组内删除用户请求：
+curl -i -k 'https://aip.baidubce.com/rest/2.0/faceverify/v1/faceset/group/deleteuser?access_token=24.a1ff1c9e242129e0e88e506dfc223454.2592000.1492586050.282335-9395294' --data '{"group_id":"gid","uid":"test_uid"}' -H 'Content-Type:application/x-www-form-urlencoded'
+
